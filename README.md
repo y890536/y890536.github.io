@@ -1,2 +1,3 @@
 # Practicing Git
-123456789
+
+練習喔
