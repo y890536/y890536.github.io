@@ -1,0 +1,741 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*reset^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.clearfix {
+    clear: both;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wrap {
+    font-family: "微軟正黑體", sans-serif;
+}
+
+h1,
+h2 {
+    font-family: Helvetica, Arial;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+/*MENU^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.indexmenu {
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    width: 100%;
+    z-index: 50;
+    transition: background ease-in-out .2s;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.menu li {
+    float: right;
+}
+
+.menu {
+    margin-right: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #aaa;
+    padding: 22px;
+    display: block;
+    letter-spacing: 0.7px;
+    transition: .5s all ease-out;
+    font-size: 14px;
+}
+
+.menu li a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+@media (max-width: 569px) {
+    .menu {
+        display: none;
+    }
+}
+
+
+/* ^^^^^^^^^yuelogo^^^^^^^^^^^^^^^^ */
+
+.yuelogo {
+    padding: 12px 0 15px 30px;
+    float: left;
+}
+
+.yuelogo h2 {
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-left: 8px;
+    color: #eee;
+    float: right;
+    font-size: 16px;
+}
+
+
+/*landpage^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.parallax-window01 {
+    height: 100vh;
+}
+
+
+/*
+length指定圖片具體大小的數值，不允許負值。
+percentage以背景圖所在元素的百分比指定背景圖大小，不允許負值。
+length與percentage可設定2數值，也可只設定1個數值，當只設定一個數值，另一個數值(高)預設值為auto，此時高度以背景圖原始寬高比例，自動縮放。
+cover主要用於背景圖小於所在的內容，而背景圖又不適合使用repeat，此時就可以採用cover的方式，使背景圖放大至內容的大小，但此方法容易使背景圖因放大而失真。
+contain與cover正好相反，主要用於背景圖大於所在內容，但卻需要將背景圖完整呈現，此時就可採用contain的方式，使背景圖縮小至內容的大小。 
+*/
+
+.parallax-window02 {
+    background-size: cover;
+}
+
+.parallax-window03 {}
+
+
+/* 
+background-attachment:背景圖片的位置是否要固定 
+fixed
+讓背景相對於 viewport（視圖）的移動是固定的。即便元素中的內容是可滾動的，背景也不會在滾動元素內容時跟著移動。(這個屬性與 background-clip: text 不相容。)
+local
+讓背景相對於元素的內容是固定的，且背景在滾動元素的內容時會跟著移動。另外，背景的繪製與定位區域是相對於元素的可滾動區域，而不是包裹著它們的邊框。
+scroll
+讓背景相對於元素本身是固定的，使背景在滾動元素的內容時不會跟著移動。
+*/
+
+@media (max-width:375px) {
+    .parallax-window01 {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width:569px) {
+    .parallax-window01 {
+        background-attachment: scroll;
+    }
+}
+
+.maintitle {}
+
+.maintitlecontent {
+    padding-top: 220px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.maintitlecontent h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+
+/* .........滑鼠&滾輪........ */
+
+.mouse-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 40px;
+    width: 24px;
+    margin-left: -15px;
+    display: block;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mouse-icon .wheel {
+    /* -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-name: drop; */
+    animation-name: drop;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+@-webkit-keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+
+
+/* 
+1. 都沒使用 !important，在這種情況下，第二個p會覆寫第一個p，所以是紅色。
+#example p { color: blue; }
+#example p { color: red; }
+2. 一個使用 !important，因為第一個有!important，所以有更高的優先權，所以會是藍色。
+#example p { color: blue !important; }
+#example p { color: red; }
+3.  二個都使用 !important，同1，第二個p覆寫了第一個p，所以是紅色。
+#example p { color: blue !important; }
+#example p { color: red !important; } 
+*/
+
+hr {
+    border: 0;
+    height: 4px !important;
+    background-color: #F05F40;
+    width: 50px;
+    margin: 30px auto;
+}
+
+.maintitlecontent p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width:569px) {
+    .maintitlecontent {
+        padding-top: 180px;
+    }
+    .maintitlecontent h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width:320px) {
+    .maintitlecontent h1 {
+        font-size: 50px;
+    }
+    .maintitlecontent p {
+        font-size: 20px;
+    }
+}
+
+
+/* .......ABOUT ..........*/
+
+.about {
+    background-color: #F05F40;
+    min-height: 400px;
+}
+
+.aboutcontent,
+.workscontent {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.aboutcontent h2 {
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.aboutcontent hr {
+    background-color: #fff;
+}
+
+.aboutcontent p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5em;
+    margin: 0 40px;
+}
+
+.btn_resume:hover {
+    background-color: #222;
+}
+
+.btn_resume {
+    text-decoration: none;
+    font-weight: 700;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    padding: 8px 18px;
+    font-size: 15px;
+    background: #FFF;
+    color: #F05F40;
+    border-radius: 300px;
+    letter-spacing: 2px;
+}
+
+.resume {
+    padding-top: 2%;
+}
+
+
+/* .......skills.....*/
+
+.works {
+    background-color: #fff;
+    min-height: 600px;
+}
+
+.workscontent {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.workscontent ul li {
+    float: left;
+    width: 31.33333%;
+    display: block;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+@media (max-width:569px) {
+    .workscontent ul li {
+        width: 99%
+    }
+    .resume {
+        padding-top: 7%;
+    }
+}
+
+@media (max-width:320px) {
+    .workscontent ul li {
+        width: 99%
+    }
+}
+
+.st-feature {
+    background-color: #F05F40;
+    border-radius: 50%;
+    position: relative;
+    -webkit-transform: rotate(0) scale(1);
+    -ms-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: color 0.3s, border-color 0.3s, background-color 0.3s, -webkit-transform 0.3s;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.st-feature:hover {
+    color: #F05F40;
+    background-color: transparent;
+    -webkit-transform: rotate(360deg) scale(1.8);
+    -ms-transform: rotate(360deg) scale(1.8);
+    transform: rotate(360deg) scale(1.8);
+}
+
+.fa-inverse:hover {
+    color: #F05F40;
+}
+
+.workscontent h2,
+.portfoliocontent h2 {
+    font-size: 40px;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.workscontent h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.workscontent p {
+    line-height: 1.4;
+    color: #777;
+}
+
+
+/* -----作品----------- */
+
+.portfoliocontent {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    .allportfolio {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+}
+
+.box {
+    max-width: 320px;
+    max-height: 200px;
+    float: left;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box img {
+    max-height: 200px;
+}
+
+.title {
+    background: rgba(255, 255, 255, .7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+    color: #262626;
+}
+
+.title:hover {
+    opacity: 1;
+}
+
+.titlecenter p {
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.titlecenter h4 {
+    font-weight: 700;
+}
+
+
+/* 文字置中 */
+
+.title:before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.titlecenter {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contactcontent {
+    min-height: 650px;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: #fff;
+}
+
+.contactcontent h2 {
+    font-size: 40px;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contactleft {
+    text-align: center;
+}
+
+.contactleft img {
+    margin: 0 auto;
+    border: 7px solid #eee;
+    margin: 15px 0;
+}
+
+.me {
+    border-radius: 50%;
+}
+
+.contact h4 {
+    font-family: Helvetica, Arial;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.contactleft p {
+    margin-top: 7px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #777;
+    font-family: Helvetica, Arial;
+}
+
+i.mail {
+    margin-right: 5px;
+}
+
+
+/* 000000000000社群圈圈0000000000000000 */
+
+.contactleft ul li a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #222;
+    display: block;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 6px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.contactleft ul li a:hover {
+    background-color: #F05F40;
+}
+
+.contactleft ul li {
+    float: left;
+    margin: 10px 0;
+}
+
+.contactleft ul {
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* -----------footer-------------- */
+
+.footer {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.copyright {
+    font-family: Helvetica, Arial;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* -----------modal叉叉-------------- */
+
+#btn-close-modal {
+    cursor: pointer;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+
+#btn-close-modal:hover {
+    opacity: 1;
+}
+
+#btn-close-modal:before,
+#btn-close-modal:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+
+#btn-close-modal:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#btn-close-modal:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* -----------modal內容-------------- */
+
+.modal-content {
+    padding: 100px;
+}
+
+.modal-content h3 {
+    font-weight: 700;
+    padding-top: 5px;
+    font-size: 22px;
+}
