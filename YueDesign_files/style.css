@@ -87,10 +87,13 @@ video {
     vertical-align: baseline;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    width: 100%;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
