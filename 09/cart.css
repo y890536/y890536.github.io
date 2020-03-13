@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ddd;
+    color: #444;
+    font-size: 80%;
+}
+
+.container {
+    width: 740px;
+    margin: 30px;
+    padding: 20px 25px;
+    background: #f9f9f9;
+}
+
+.container h1 {
+    margin-bottom: 24px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #888;
+    font-size: 18px;
+}
+
+/**
+ * 商品清單
+ */
+.item-list {
+    position: relative;
+    z-index: 2;
+    margin-left: -15px;
+}
+
+.item-list li {
+    float: left;
+    list-style: none;
+    margin: 0 0 15px 15px;
+    text-align: center;
+}
+
+.item-list .image {
+    margin-bottom: 4px;
+    padding-top: 20px;
+    width: 136px;
+    height: 116px;
+    background: url(img/card.png);
+}
+
+.item-list .image:hover {
+    background-position: 0px -136px;
+}
+
+/**
+ * 購物車
+ */
+.cart {
+    clear: left;
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 20px 280px;
+    min-height: 140px;
+    border-bottom: 1px solid #ccc;
+    background: #f0ecc9 url(img/cart_off.png) no-repeat 15px 15px;
+    font-size: 16px;
+}
+
+.cart.active {
+    background-image: url(img/cart_on.png);
+}
+
+.cart .total {
+    position: absolute;
+    padding-right: 2px;
+    width: 240px;
+    right: 20px;
+    bottom: 20px;
+    border-bottom: 1px solid #ed5a2e;
+    color: #ed5a2e;
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart .list {
+    list-style: decimal;
+    margin-bottom: 40px;
+}
+
+/**
+ * 購物車內的商品清單
+ */
+.cart .item {
+    margin-bottom: 8px;
+}
+
+.cart .item img {
+    display: none;
+}
+
+.cart .item .name {
+    display: inline;
+}
