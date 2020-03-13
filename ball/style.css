@@ -1,0 +1,165 @@
+/* used flexbox to center content */
+
+#ball {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    animation: jump 1s infinite;
+    overflow: hidden;
+}
+
+
+/*Ball texture*/
+
+#ball:after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: url("ball.svg");
+    position: absolute;
+    z-index: 5;
+    background-repeat: repeat;
+    background-size: cover;
+    animation-timing-function: linear;
+}
+
+
+/*Ball light*/
+
+#ball:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-image: url("http://svgur.com/i/5C.svg");
+    background-size: 110%;
+    border-radius: 100%;
+    animation: lightop 1s infinite;
+}
+
+
+/*Shadow on ball*/
+
+#ballshad {
+    background: url("http://svgur.com/i/5P.svg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 100%;
+    animation: shadop 1s infinite;
+    margin: auto;
+    display: block;
+    background-size: contain;
+    z-index: 10;
+}
+
+
+/* Animation keyframes */
+
+@keyframes jump {
+    0% {
+        top: 0;
+        transform: scale3d(1, 1, 1);
+        border-radius: 100%;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        top: 50px;
+        animation-timing-function: ease-out;
+        transform: scale3d(1.3, .8, 1);
+    }
+    55% {
+        transform: scale3d(1, 1, 1);
+    }
+    60% {
+        transform: scale3d(.8, 1.1, 1);
+    }
+    70% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+    72% {
+        transform: scale3d(1, 1, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+        top: 0;
+        border-radius: 100%;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 80px;
+        height: 20px;
+        animation-timing-function: ease-in;
+        left: 150%;
+        opacity: .2;
+    }
+    50% {
+        bottom: 5px;
+        margin-left: -10px;
+        width: 50px;
+        height: 10px;
+        animation-timing-function: ease-out;
+        left: 35%;
+        opacity: 1;
+    }
+    100% {
+        bottom: 0;
+        margin-left: -30px;
+        width: 80px;
+        height: 20px;
+        animation-timing-function: ease-in;
+        left: 150%;
+        opacity: .2;
+    }
+}
+
+@keyframes lightop {
+    0% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .1;
+    }
+    100% {
+        opacity: .25;
+    }
+}
+
+@keyframes shadop {
+    0% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .55;
+    }
+    100% {
+        opacity: .25;
+    }
+}
+
+@keyframes back {
+    0% {
+        background-position: top;
+    }
+    100% {
+        background-position: bottom;
+    }
+}
