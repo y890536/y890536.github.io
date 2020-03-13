@@ -522,6 +522,11 @@ hr {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
+.portfoliocontent img {
+    border-radius: 5%;
+    border: 1px solid;
+}
+
 .workscontent h4 {
     font-size: 22px;
     font-weight: 700;
