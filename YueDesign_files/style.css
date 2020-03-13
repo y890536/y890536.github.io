@@ -85,15 +85,15 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
 }
 
 body {
     width: 100%;
     height: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 
