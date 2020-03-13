@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title>顯示現在位置周邊地圖</title>
+<link rel="stylesheet" href="map.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div id="start" class="section">
+        <p>取得位置資訊中</p>
+    </div>
+
+    <div id="input" class="section hide">
+        <div>緯度:<input type="text" id="latitude" value="" /></div>
+        <div>經度:<input type="text" id="longitude" value="" /></div>
+        <input type="submit" id="button" value="顯示" />
+    </div>
+
+    <div id="map" class="section hide"></div>
+</div>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDx0Sawxi3YV5v6YIx1yQHMRvJelz04VLw&sensor=true"></script>
+<script type="text/javascript" src="map.js"></script>
+
+</body>
+</html>
