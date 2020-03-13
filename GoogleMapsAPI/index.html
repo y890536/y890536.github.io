@@ -1,30 +1,44 @@
-<!DOCTYPE HTML>
-<html lang="zh-tw">
+<!DOCTYPE html>
+<html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-<title>顯示現在位置周邊地圖</title>
-<link rel="stylesheet" href="map.css">
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        
+        #map {
+            height: 100%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
+
 <body>
+    <div id="map"></div>
+    <script>
+        var map;
 
-<div class="wrapper">
-    <div id="start" class="section">
-        <p>取得位置資訊中</p>
-    </div>
-
-    <div id="input" class="section hide">
-        <div>緯度:<input type="text" id="latitude" value="" /></div>
-        <div>經度:<input type="text" id="longitude" value="" /></div>
-        <input type="submit" id="button" value="顯示" />
-    </div>
-
-    <div id="map" class="section hide"></div>
-</div>
-
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDx0Sawxi3YV5v6YIx1yQHMRvJelz04VLw&sensor=true"></script>
-<script type="text/javascript" src="map.js"></script>
-
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: -34.397,
+                    lng: 150.644
+                },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBV1HfgIpZ4N2lh7-km5cZxtUsbFtTk9wg&libraries&callback=initMap" async defer></script>
 </body>
+
 </html>
