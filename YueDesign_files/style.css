@@ -85,6 +85,10 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -225,6 +229,7 @@ h2 {
 
 .parallax-window01 {
     height: 100vh;
+    background-size: auto;
 }
 
 
@@ -237,10 +242,12 @@ contain與cover正好相反，主要用於背景圖大於所在內容，但卻�
 */
 
 .parallax-window02 {
-    background-size: cover;
+    background-size: auto;
 }
 
-.parallax-window03 {}
+.parallax-window03 {
+    background-size: auto;
+}
 
 
 /* 
