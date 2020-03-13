@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw">
+<head>
+<meta charset="utf-8">
+<title>可以拖放方式新增的購物車</title>
+<link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>請將商品拖放至購物車中</h1>
+    <ul class="item-list">
+        <li class="item" data-price="24000">
+            <div class="image"><img src="img/item_display.png" alt="螢幕"></div>
+            <div class="name">螢幕</div>
+            <span class="price">24,000元</span>
+        </li>
+        <li class="item" data-price="36000">
+            <div class="image"><img src="img/item_pc.png" alt="桌上型電腦"></div>
+            <div class="name">桌上型電腦</div>
+            <span class="price">36,000元</span>
+        </li>
+        <li class="item" data-price="3000">
+            <div class="image"><img src="img/item_hdd.png" alt="HDD"></div>
+            <div class="name">HDD</div>
+            <span class="price">3,000元</span>
+        </li>
+        <li class="item" data-price="1800">
+            <div class="image"><img src="img/item_keybord.png" alt="鍵盤"></div>
+            <div class="name">鍵盤</div>
+            <span class="price">1,800元</span>
+        </li>
+        <li class="item" data-price="1800">
+            <div class="image"><img src="img/item_router.png" alt="路由器"></div>
+            <div class="name">路由器</div>
+            <span class="price">1,8000元</span>
+        </li>
+    </ul>
+
+    <div class="cart" id="cart">
+        <div class="total">尚未有任何商品</div>
+        <ul class="list"></ul>
+    </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="cart.js"></script>
+
+</body>
+</html>
