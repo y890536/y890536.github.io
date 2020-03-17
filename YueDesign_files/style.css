@@ -180,7 +180,7 @@ h2 {
     width: 100%;
     z-index: 50;
     transition: background ease-in-out .2s;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .menu li {
@@ -194,12 +194,12 @@ h2 {
 .menu li a {
     text-decoration: none;
     font-weight: 900;
-    color: #aaa;
+    color: white;
     padding: 22px;
     display: block;
     letter-spacing: 0.7px;
     transition: .5s all ease-out;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .menu li a:hover {
