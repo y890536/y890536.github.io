@@ -483,11 +483,14 @@ hr {
     display: block;
     margin-right: 1%;
     margin-left: 1%;
+    font-size: 16px;
 }
 
 .workscontent p {
     font-family: 'Noto Sans TC' sans-serif;
     font-weight: 500;
+    text-align: left;
+    margin-left: 30%;
 }
 
 @media (max-width:569px) {
