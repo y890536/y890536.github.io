@@ -295,6 +295,11 @@ scroll
     color: #fff;
 }
 
+.maintitlecontent p {
+    font-family: 'Noto Sans TC' sans-serif;
+    font-weight: 600;
+}
+
 
 /* .........滑鼠&滾輪........ */
 
@@ -375,7 +380,7 @@ scroll
 hr {
     border: 0;
     height: 4px !important;
-    background-color: #F05F40;
+    background-color: #FFF;
     width: 50px;
     margin: 30px auto;
 }
@@ -408,7 +413,7 @@ hr {
 /* .......ABOUT ..........*/
 
 .about {
-    background-color: gray;
+    background: linear-gradient(20deg, #3d5493, #1aa2a0) fixed center center / 100% 100%;
     min-height: 400px;
 }
 
@@ -433,6 +438,9 @@ hr {
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.5em;
     margin: 0 40px;
+    font-size: 20px;
+    font-family: 'Noto Sans TC' sans-serif;
+    font-weight: 300;
 }
 
 .btn_resume:hover {
@@ -447,7 +455,7 @@ hr {
     padding: 8px 18px;
     font-size: 15px;
     background: #FFF;
-    color: #F05F40;
+    color: #1aa2a0;
     border-radius: 300px;
     letter-spacing: 2px;
 }
@@ -460,7 +468,7 @@ hr {
 /* .......skills.....*/
 
 .works {
-    background-color: #fff;
+    background-color: #FFF;
     min-height: 600px;
 }
 
@@ -471,10 +479,15 @@ hr {
 
 .workscontent ul li {
     float: left;
-    width: 31.33333%;
+    width: 48%;
     display: block;
     margin-right: 1%;
     margin-left: 1%;
+}
+
+.workscontent p {
+    font-family: 'Noto Sans TC' sans-serif;
+    font-weight: 500;
 }
 
 @media (max-width:569px) {
@@ -493,7 +506,7 @@ hr {
 }
 
 .st-feature {
-    background-color: #F05F40;
+    background-color: #1aa2a0;
     border-radius: 50%;
     position: relative;
     -webkit-transform: rotate(0) scale(1);
@@ -504,7 +517,7 @@ hr {
 }
 
 .st-feature:hover {
-    color: #F05F40;
+    color: #1aa2a0;
     background-color: transparent;
     -webkit-transform: rotate(360deg) scale(1.8);
     -ms-transform: rotate(360deg) scale(1.8);
@@ -512,7 +525,7 @@ hr {
 }
 
 .fa-inverse:hover {
-    color: #F05F40;
+    color: #1aa2a0;
 }
 
 .workscontent h2,
@@ -524,7 +537,7 @@ hr {
 
 .portfoliocontent img {
     border-radius: 5%;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .workscontent h4 {
@@ -582,6 +595,7 @@ hr {
 
 .title:hover {
     opacity: 1;
+    border-radius: 5%;
 }
 
 .titlecenter p {
@@ -633,7 +647,6 @@ hr {
 
 .contactleft img {
     margin: 0 auto;
-    border: 7px solid #eee;
     margin: 15px 0;
 }
 
@@ -680,7 +693,7 @@ i.mail {
 }
 
 .contactleft ul li a:hover {
-    background-color: #F05F40;
+    background-color: #1aa2a0;
 }
 
 .contactleft ul li {

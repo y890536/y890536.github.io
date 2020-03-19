@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,500" rel="stylesheet" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        
+        .warp {
+            width: 100%;
+            display: flex;
+            position: absolute;
+            top: 50%;
+            margin-top: -150px;
+        }
+        
+        .item {
+            width: 25%;
+            position: relative;
+        }
+        
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        
+        .item .txt {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+        
+        .item:hover .txt {
+            opacity: 1;
+        }
+        
+        .item h2 {
+            font-size: 28px;
+            color: #ff0;
+            font-weight: 500;
+        }
+        
+        .item h2:after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            margin: 10px 0;
+            background-color: #ff0;
+            transition: width .5s .5s;
+        }
+        
+        .item:hover h2:after {
+            width: 100%;
+        }
+        
+        .item p {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp">
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=1">
+            <div class="txt">
+                <h2>適用審批確保，您現在過程客服顧問，等等。</h2>
+                <p>突然特點安徽，協調富岡推薦使用時尚，接。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=2">
+            <div class="txt">
+                <h2>專門導演戰爭合適，我又回應把你男性我去。</h2>
+                <p>幹部西方打了演唱會有時鈴聲立場，風景靈。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=3">
+            <div class="txt">
+                <h2>要是年度壓縮標籤，下載次數日子成功，俱。</h2>
+                <p>環節都會，轉載硬體不對面議發佈我都任何。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/500/400/?random=4">
+            <div class="txt">
+                <h2>繼續有很多互相，寶貝動作房產普通辦理明。</h2>
+                <p>這位基礎地說見到本網站瞬間，物品評論不。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
