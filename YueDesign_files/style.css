@@ -296,9 +296,10 @@ scroll
 }
 
 .maintitlecontent p {
-    font-family: 'Noto Sans TC' sans-serif;
-    font-weight: 600;
     color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-family: 'Noto Sans TC' sans-serif;
+    font-weight: 700;
 }
 
 
