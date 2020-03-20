@@ -292,12 +292,13 @@ scroll
     text-transform: uppercase;
     font-size: 80px;
     text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .maintitlecontent p {
     font-family: 'Noto Sans TC' sans-serif;
     font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -380,7 +381,7 @@ scroll
 hr {
     border: 0;
     height: 4px !important;
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.8);
     width: 50px;
     margin: 30px auto;
 }
@@ -490,7 +491,7 @@ hr {
     font-family: 'Noto Sans TC' sans-serif;
     font-weight: 500;
     text-align: left;
-    margin-left: 30%;
+    margin-left: 22%;
 }
 
 @media (max-width:569px) {
