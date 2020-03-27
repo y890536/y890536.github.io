@@ -1,0 +1,321 @@
+﻿/* ------- base ------- */
+
+body {
+    font-family: "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "儷黑 Pro", "LiHei Pro", "新細明體", "PMingLiU", sans-serif;
+    font-size: 12px;
+    color: #000;
+    background: #EEECEA;
+    line-height: 2em;
+}
+
+nav,
+h1,
+.page-id,
+.btn {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+}
+
+body,
+div,
+ul,
+li,
+h1,
+p,
+section,
+header,
+footer,
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ------- 容器 ------- */
+
+#container {
+    margin: 0 auto;
+    width: 820px;
+}
+
+
+/* ------- 頁首 ------- */
+
+header {
+    width: 100%;
+    margin: 70px 0 90px;
+}
+
+#logo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul,
+nav li {
+    display: inline-block;
+}
+
+nav li {
+    float: left;
+    padding: 0 15px;
+    font-size: 20px;
+    border-left: 1px solid #AAA;
+}
+
+nav li:first-child {
+    border-left: none;
+}
+
+nav li a:hover,
+nav li a.selected {
+    color: #AAA;
+}
+
+
+/* ------- 內容 ------- */
+
+#contents {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+
+/* ------- 網頁的共通設定 ------- */
+
+section.content {
+    width: 100%;
+    height: 400px;
+}
+
+
+/* .main-img */
+
+.main-img {
+    position: relative;
+    width: 440px;
+    height: 320px;
+}
+
+.main-img .triangle {
+    position: absolute;
+}
+
+.main-img .photo {
+    position: absolute;
+    width: 420px;
+    height: 300px;
+}
+
+.main-img .ttl {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+}
+
+.main-img .ttl .circle {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: #EE209A;
+    /* 不支援 CSS3 的瀏覽器用 */
+    background: rgba(238, 32, 154, 0.8);
+    /* 圓的描繪 */
+    -webkit-border-radius: 65px;
+    -moz-border-radius: 65px;
+    border-radius: 65px;
+}
+
+.main-img .ttl .page-id {
+    position: absolute;
+    width: 100%;
+    font-size: 54px;
+    text-align: center;
+    line-height: 120px;
+    color: #FFF;
+}
+
+
+/* .copy */
+
+.copy {
+    width: 340px;
+}
+
+.copy h1 {
+    margin-bottom: 23px;
+    font-size: 38px;
+}
+
+.copy p {
+    margin-bottom: 18px;
+}
+
+.copy a.btn {
+    display: block;
+    width: 70px;
+    height: 25px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 25px;
+    color: #FFF;
+    /* 圓角四角型的描繪 */
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+
+
+/* ------- 01頁 ------- */
+
+#page01 .main-img {
+    float: left;
+}
+
+#page01 .main-img .triangle {
+    right: 0;
+    bottom: 0;
+    /* 三角形的描繪 */
+    width: 0;
+    height: 0;
+    border-bottom: 260px solid #000;
+    border-left: 260px solid transparent;
+}
+
+#page01 .main-img .photo {
+    top: 0;
+    left: 0;
+}
+
+#page01 .main-img .ttl {
+    left: -65px;
+    top: -65px;
+}
+
+#page01 .main-img .ttl .circle {
+    background: #EE209A;
+    /* 不支援 CSS3 的瀏覽器用 */
+    background: rgba(238, 32, 154, 0.8);
+}
+
+#page01 .copy {
+    float: right;
+    margin-top: 50px;
+}
+
+#page01 .copy a.btn {
+    background: #EE209A;
+}
+
+
+/* ------- 02頁 ------- */
+
+#page02 .main-img {
+    float: right;
+}
+
+#page02 .main-img .triangle {
+    top: 0;
+    left: 0;
+    /* 三角形的描繪 */
+    width: 0;
+    height: 0;
+    border-top: 260px solid #000;
+    border-right: 260px solid transparent;
+}
+
+#page02 .main-img .photo {
+    bottom: 0;
+    right: 0;
+}
+
+#page02 .main-img .ttl {
+    right: -65px;
+    bottom: -65px;
+}
+
+#page02 .main-img .ttl .circle {
+    background: #00AEEF;
+    /* 不支援 CSS3 的瀏覽器用 */
+    background: rgba(0, 174, 239, 0.8);
+}
+
+#page02 .copy {
+    float: left;
+    margin-top: 50px;
+    text-align: right;
+}
+
+#page02 .copy a.btn {
+    margin-left: auto;
+    margin-right: 0;
+    background: #00AEEF;
+}
+
+
+/* ------- 03頁 ------- */
+
+#page03 .main-img {
+    float: left;
+}
+
+#page03 .main-img .triangle {
+    top: 0;
+    left: 0;
+    /* 三角形的描繪 */
+    width: 0;
+    height: 0;
+    border-top: 260px solid #000;
+    border-right: 260px solid transparent;
+}
+
+#page03 .main-img .photo {
+    bottom: 0;
+    right: 0;
+}
+
+#page03 .main-img .ttl {
+    bottom: -65px;
+    right: -65px;
+}
+
+#page03 .main-img .ttl .circle {
+    background: #000;
+    /* 不支援 CSS3 的瀏覽器用 */
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#page03 .copy {
+    float: right;
+    margin-top: 50px;
+}
+
+#page03 .copy a.btn {
+    margin-left: auto;
+    margin-right: 0;
+    background: #000;
+}
+
+
+/* ------- 頁尾 ------- */
+
+footer {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 10px;
+    text-align: center;
+}
