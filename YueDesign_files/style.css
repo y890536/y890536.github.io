@@ -307,8 +307,8 @@ scroll
 
 .mouse-icon {
     position: absolute;
-    left: 50%;
-    bottom: 22%;
+    right: 3%;
+    bottom: 3%;
     border: 2px solid #fff;
     border-radius: 16px;
     height: 40px;
